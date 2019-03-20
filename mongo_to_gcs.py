@@ -5,7 +5,7 @@ from datetime import datetime, timedelta
 import airflow
 from mongo_to_gcs.operators.mongo_operator import MongoToGcs
 default_args = {
-    'owner': 'mikeghen',
+    'owner': 'sid',
     'start_date':airflow.utils.dates.days_ago(1),
     'depends_on_past': False,
     'retries': 1,
